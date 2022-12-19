@@ -1,84 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+    <link rel="stylesheet" href="syle.css" />
+  </head>
+  <body>
     <section>
-        <nav> 
-            <img src="./HTML Practise Assets/" alt="">
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#discord">Discord</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <header>
-            <div>
-                <h1>Best place to learn frontend</h1>
-                <p>Go from being an absolute beginner to pro with a simpilfied process</p>
-                <button>Start now</button>
-            </div>
-            <figure>
-                <img src="./HTML Practise Assets/laptop.png" alt="Home page image">
-            </figure>
-        </header>
+      <nav>
+        <img src="./HTML Practise Assets/" class="logo" alt="" />
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#discord">Discord</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <header>
+        <div class="row" div>
+          <div class="home__description">
+          <h1>Best place to learn frontend</h1>
+          <p class="subheader">
+            Go from being an absolute beginner to pro with a simpilfied process
+          </p>
+          <button class="home__description--button">Start now</button>
+        </div>
+        <figure>
+          <img src="./HTML Practise Assets/laptop.png" alt="Home page image" />
+        </figure>
+        </div>
+      </header>
     </section>
 
     <main>
-        <section id="about">
-            <div>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque quisquam amet facere porro, accusamus tenetur odio repellat suscipit perferendis dignissimos cupiditate 
-                    voluptatem rerum enim,
-                     tempora sit architecto, itaque sequi quod.
-                </p>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque quisquam amet facere porro, accusamus tenetur odio repellat suscipit perferendis dignissimos cupiditate 
-                    voluptatem rerum enim,
-                     tempora sit architecto, itaque sequi quod.</p>
+      <section id="about">
+        <div class="row">
+          <h2>About</h2>
+          <div class="section__description">
+            <div class="section__description--wrapper">
+              <p class="section__description--para">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque
+                quisquam amet facere porro, accusamus tenetur odio repellat
+                suscipit perferendis dignissimos cupiditate voluptatem rerum
+                enim, tempora sit architecto, itaque sequi quod.
+              </p>
+              <p class="section__description--para">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque
+                quisquam amet facere porro, accusamus tenetur odio repellat
+                suscipit perferendis dignissimos cupiditate voluptatem rerum
+                enim, tempora sit architecto, itaque sequi quod.
+              </p>
             </div>
-            <figure>
-                <img src="./HTML Practise Assets/about.jpg" alt="">
+            <figure class="about__img--wrapper">
+              <img src="./HTML Practise Assets/about.jpg" alt="" />
             </figure>
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <section id="discord">
-            <h2>Discord</h2>
-            <figure>
-                <img src="./HTML Practise Assets/discord.png" alt="">
+      <section id="discord">
+        <h2>Discord</h2>
+        <div class="row">
+          <div class="section__description">
+            <figure class="about__img--wrapper">
+              <img src="./HTML Practise Assets/discord.png" alt="" />
             </figure>
-            <div>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta illum repudiandae rem cum accusamus.
-                     Quae debitis vero amet sed id neque beatae? Beatae, et? Numquam minus quam incidunt iste error!
-                </p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta illum repudiandae rem cum accusamus.
-                    Quae debitis vero amet sed id neque beatae? Beatae, et? Numquam minus quam incidunt iste error!
-                </p>
+            <div class="section__description--wrapper">
+              <p class="section__description--para">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta
+                illum repudiandae rem cum accusamus. Quae debitis vero amet sed
+                id neque beatae? Beatae, et? Numquam minus quam incidunt iste
+                error!
+              </p>
+              <p class="section__description--para">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta
+                illum repudiandae rem cum accusamus. Quae debitis vero amet sed
+                id neque beatae? Beatae, et? Numquam minus quam incidunt iste
+                error!
+              </p>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <section id="contact">
-            <h2>Contact</h2>
-            <form action="">
-                <span>Email</span>
-                <input type="text" placeholder="jane@example.com">
-                <span>Email</span>
-                <textarea type="text" placeholder="jane@example.com"></textarea>
-            </form>
-        </section>
+      <section id="contact">
+        <h2>Contact</h2>
+        <form action="">
+          <span>Email</span>
+          <input type="email" placeholder="jane@example.com" />
+          <span>Message</span>
+          <textarea
+            type="text"
+            placeholder="Cool Website, Lets get connected"
+          ></textarea>
+          <button>Contact us!</button>
+        </form>
+      </section>
     </main>
     <footer>
-        <img src="./HTML Practise Assets/FES.svg" alt="">
-        <div>
-            <a href="#about">About</a>
-            <a href="#discord">Discord</a>
-            <a href="#contact">Contact</a>
-            <a href="#courses">Courses</a>
-        </div>
-        <p>copyright frontend simpilfied</p>
+      <img class="footer__logo" src="./HTML Practise Assets/FES.svg" alt="" />
+      <div class="footer__links">
+        <a class="footer__logo" href="about" About></a>
+        <a class="footer__links" href="#discord">Discord</a>
+        <a class="footer__links" href="#contact">Contact</a>
+        <a class="footer__links" href="#courses">Courses</a>
+      </div>
+      <p>copyright frontend simpilfied</p>
     </footer>
-</body>
+  </body>
 </html>
